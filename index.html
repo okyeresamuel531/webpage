@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta ="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+ 
+  </head>
+  <body>
+   <!-- Page title -->
+    <h1 id="title">Batsa_forex Survey Form</h1>
+   <!-- Short Description -->
+    <p id="description">Please help us improve the quality of this platform by filling this form... Thank you.</p>
+    <!-- Form ID -->
+    <form id="survey-form">
+    <!-- Name input -->
+    <div class="input-element"> 
+      <label id="name-label" for="name">Name
+        <input placeholder="Enter your name"  id="name" type="text" required >
+      </label>
+      </div>
+      <!-- Email input -->
+      <div class="input-element"> 
+        <label id="email-label" for="email">Email<input placeholder="Enter your email" required id="email" name="email" type="email">
+      </label>
+      </div>
+      <!-- Number input -->
+      <div class="input-element"> 
+        <label id="number-label" for="number">Age
+          <input placeholder="Enter your age" min="18" max="110" id="number" name="number" type="number" required>
+      </label>
+      </div>
+     <div class="input-element">
+        <label id="select-label"> 
+         <select id="dropdown">
+        <option value="" >Gender:
+        </option>
+      <option value="1">Male
+      </option>
+      <option value="2">Female
+      </option>
+      </label>
+      </div>
+      </select>
+      <!-- Account Type -->
+      <legend> Account Type (Reqiured):  
+      </legend>
+    <label for "personal-account">
+      <input id="personal-account" name="account-type" type="radio" value="value" class="inline" checked>Personal
+      </label>
+      <label for="business-account">
+        <input id="business-account" name="account-type" type="radio" value="value" class="inline">Business
+        </label>
+       <!-- Check boxes -->
+      <p><h4>How did you hear about "Batsa_forex"?</h4></p>
+  <label>
+    <input type="checkbox" name="referrer" value="Youtube">Batsa_forex's youtube channel
+  </label>
+  <label>
+    <input type="checkbox" name="referrer" value="Advertisement">Online advertisement
+  </label>
+<label>
+  <input type="checkbox" name="referrer" value="Webinar">Batsa_forex webinar
+</label>
+<label>
+  <input type="checkbox" name="referrer" value="other">Other
+</label>
+     <label for="additional-comments">Want to comment on something else..? Share with us.
+       <textarea id="additional-comments" name="additional-comments" placeholder="Any thought to share?" >
+       </textarea>
+     </label>
+     <input id="submit" type="submit" value"Submit"/>
+     </label>
+     </form>
+  </body>
+</html>
